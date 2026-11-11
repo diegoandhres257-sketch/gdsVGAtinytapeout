@@ -9,11 +9,31 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This project generates five concentric rings on a VGA display using Verilog HDL.
+
+Each ring is divided into eight equal angular sectors. One sector is highlighted at a time, creating a rotating animation.
+
+The first, third, and fifth rings rotate clockwise, while the second and fourth rings rotate counterclockwise.
+
+The rings use flat matte colors and a black background. Their circular geometry is generated from pixel coordinates.
+
+The animation advances automatically using a frame counter synchronized with the VGA signal.
 
 ## How to test
 
-Explain how to use your project
+Connect the design to a compatible VGA display or simulator.
+
+Apply the required clock signal.
+
+Release the active-low reset.
+
+Verify that five concentric rings appear on the screen.
+
+Check that the highlighted sectors move sequentially.
+
+Verify that adjacent rings rotate in opposite directions.
+
+Confirm that all eight sectors have equal angular dimensions and that the animation repeats continuously.
 
 ## External hardware
 
